@@ -1,0 +1,69 @@
+body {
+	background-image: url('images/bg.jpg');
+	background-repeat: no-repeat;
+}
+#container {
+	width: 338px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Trebuchet MS, sans serif;
+	font-size: 17px;
+}
+#gmail {
+	background-image: url('images/gmail.png');
+	background-position: 0px 0px;
+	width: 54px;
+	height: 54.5px;
+	display: block;
+	float: left;
+	margin-left: 25px;
+}
+#gmail:hover {
+	background-position: 0px -54.5px;
+}
+#twitter {
+	background-image: url('images/twitter.png');
+	background-position: 0px 0px;
+	width: 54px;
+	height: 54.5px;
+	display: block;
+	float: left;
+	margin-left: 24px;
+}
+#twitter:hover {
+	background-position: 0px -54.5px;
+}
+#tumblr {
+	background-image: url('images/tumblr.png');
+	background-position: 0px 0px;
+	width: 54px;
+	height: 54.5px;
+	display: block;
+	float: left;
+	margin-left: 24px;
+}
+#tumblr:hover {
+	background-position: 0px -54.5px;
+}
+#linkedin {
+	background-image: url('images/linkedin.png');
+	background-position: 0px 0px;
+	width: 53px;
+	height: 54.5px;
+	display: block;
+	float: left;
+	margin-right: 25px;
+	margin-left: 24px;
+}
+#linkedin:hover {
+	background-position: 0px -54.5px;
+}
+.copyright {
+	position: fixed;
+	bottom: 0px;
+	padding-left: 40px;
+	text-align: center;
+	font-style: italic;
+	font-size: 10px;
+	text-align: center;
+}

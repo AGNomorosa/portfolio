@@ -1,0 +1,76 @@
+.blue_bar {
+	position: absolute;
+	height: 768px;
+	width: 253px;
+	left: 10px;
+	top: 10px;
+	background-image: url(images/bkg.png);
+}
+.port {
+	position: absolute;
+	height: 405px;
+	width: 480px;
+	left: 275px;
+	top: 247px;
+	color: #FFF;
+}
+.contact {
+	position: absolute;
+	height: 405px;
+	width: 468px;
+	left: 275px;
+	top: 237px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #CCC;
+}
+.port img {
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+}
+.contact img {
+	margin-right: 35px;
+	margin-bottom: 25px;
+}
+.footer {
+	position: absolute;
+	height: 40px;
+	width: 468px;
+	left: 275px;
+	top: 732px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11.7px;
+	color: #FFF;
+	text-align: left;
+}
+.footer a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #336699;
+	text-decoration: none;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #336699;
+	font-weight: 100;
+	line-height: 30px;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #CCC;
+	font-weight: 400;
+	line-height: 18px;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	line-height: 15px;
+	font-weight: normal;
+}
