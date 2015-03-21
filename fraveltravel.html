@@ -1,177 +1,86 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="icon" href="favicon.ico" type="image/x-icon"> 
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        
-        <meta name="keywords" content="Anthony Nomorosa, Nomorosa, web, print, interactive, design, designer, front end developer, web designer, occuprint, occupy dc, washington dc, washington metro area" />
-		<meta name="description" content="The portfolio website for web designer and front-end developber, Anthony Nomorosa." />
-		<meta name="author" content="Anthony Nomorosa" />
-        <title>Anthony Nomorosa | Fravel Travel</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="css/foundation.css" type="text/css">
-        
-        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script>
-            $(function() {
-                var pull 		= $('#pull');
-                menu 		= $('nav ul');
-                menuHeight	= menu.height();
-                
-                $(pull).on('click', function(e) {
-                    e.preventDefault();
-                    menu.slideToggle();
-                });
-                
-                $(window).resize(function(){
-                    var w = $(window).width();
-                    if(w > 320 && menu.is(':hidden')) {
-                        menu.removeAttr('style');
-                    }
-                });
-            });
-        </script>
-    </head>
-    
-    <body>
-    <!----- Section #1 / Header ----->
-        <div id="header-inner" class="header-fraveltravel header-screen">
-        <section class="row">
-            <header class="large-12 columns">
-                <div id="top-nav">
-                    <a href="index.html#1"><img src="imgs/nomo-logo.png" alt="Anthony Nomorosa" /></a>
-                    <a href="https://twitter.com/AGNomorosa" target="_blank"><img src="imgs/icons/twitter-logo.png" class="float-right" alt="Twitter" /></a>
-                    <a href="http://instagram.com/agnomorosa" target="_blank"><img src="imgs/icons/instagram-logo.png" class="float-right" alt="Instagram" /></a>
-                    <a href="http://www.linkedin.com/profile/view?id=87301084&goback=%2Enmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic" target="_blank"><img src="imgs/icons/linkedin-logo.png" class="float-right" alt="LinkedIn" /></a>
-                    <div style="clear: both;"></div>
-                </div>
-                <div>
-                    <h1>Fravel Travel</h1>
-                    <h4>Wordpress Design, Development</h4>
-                </div>
-            </header>
-        </section>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
+    <title>Anthony Nomorosa : Designer/Developer</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!------ HEADER ------>
+        <div class="row" id="header">
+            <div class="large-5 columns">
+                <h1><a href="index.html"  id="logo">Anthony<br />Nomorosa</a></h1>
+            <!--<div class="callout panel">
+              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+            </div>-->
+            </div>
+            <div class="large-4 columns">
+                <h5>Designer /<br />Developer</h5>
+            </div>
+            <div class="large-3 columns">
+                <p><a href="mailto:design.nomorosa@gmail.com" class="head" target="_blank">design.nomorosa@gmail.com</a><br />
+                <a href="http://linkd.in/1c1MCmU" class="head" target="_blank">LinkedIn</a> <span class="backslash">/</span> <a href="img/nomorosa_cv-2015.pdf" class="head">Resum&eacute;</a></p>
+            </div>
         </div>
-    <!----- Navigation Bar ----->
-        <nav class="clearfix">
-            <ul class="clearfix">
-                <li><a href="index.html#1">Anthony Nomorosa</a></li>
-                <li><a href="index.html#2">Portfolio</a></li>
-                <li><a href="/imgs/nomorosa_cv-2014.pdf" target="_target">Resume</a></li>
-            </ul>
-            <a href="#" id="pull"><img src="imgs/nomo-logo.png" width="20px" /> Anthony Nomorosa</a>
-        </nav>
-<!----- CONTENT ----->
-    <!----- Section #2 / Portfolio ----->
-    <div id="portfolio-inner" class="inner-fraveltravel">
-        <div style="height: 50px;"> </div>
-        <section class="row">
-            <article class="large-12 columns">
-                <h1>From Design to Development</h1>
-                <p>Fravel Travel is a company located in Northern Virginia that focuses on providing travel agents&apos; packages and deals in Ireland and Northern Ireland. Katie Fravel offers custom trip itineraries while interacting with clients through a front-end a login page for users with onsite invoicing and payment for custom travel packages. The objective is to have a professional site that demonstrates her possible trip package offerings, but a personal connection with her clients regardless of what platform they choose to view and use her site.</p>
-                <p><a href="http://www.fraveltravel.com" target="_blank">VISIT SITE</a></p>
-                <img src="imgs/inner_page-imgs/fraveltravel-inner2.png" class="inner-img" />
-            </article>
-        </section>
-    </div>
-    <div id="case-studies">
-        <section class="row">
-            <article class="large-6 columns">
-                 <div class="case_study"> 
-                    <h3>&lt; Previous Project</h3>
-                     <div class="face-occupy face">
-                        <a href="occupy.html">
-                            <h4>Occuprint</h4> 
-                        </a>
-                     </div> 
-                </div> 
-            </article>
-            <article class="large-6 columns">
-                 <div class="case_study"> 
-                    <h3>Next Project &gt;</h3>
-                     <div class="face-c6 face">
-                        <a href="c6fn.html">
-                            <h4>C6 Fight Night</h4> 
-                        </a>
-                     </div> 
-                </div>
-            </article>
-        </section>    
-    </div>
-    <section id="5">
-        <div id="contact">
-        <div id="socialmedia">
-            <a href="http://www.linkedin.com/profile/view?id=87301084&goback=%2Enmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=spm_pic" target="_blank"><img src="imgs/icons/linkedin-logo.png" class="socialicons" /></a>
-            <a href="http://instagram.com/agnomorosa" target="_blank"><img src="imgs/icons/instagram-logo.png" class="socialicons" /></a>
-            <a href="https://twitter.com/AGNomorosa" target="_blank"><img src="imgs/icons/twitter-logo.png" class="socialicons" /></a>
+    <!------ END HEADER ------>
+    <!------ PORTFOLIO ------>
+        <div class="row">
+          <div class="large-8 columns">
+              <h1 id="title">Fravel Travel</h1>
+          </div>
+            <!------ PROJECT NAV ------>
+            <div class="large-4 columns">
+                <p class="project_nav-top">
+                    <strong><a href="occupydc.html">&lt;</a></strong>
+                    <a href="index.html">Home</a>
+                    <strong><a href="c6fn.html">&gt;</a></strong>
+                </p> 
+            </div>
+            <!------ END PROJECT NAV ------>
         </div>
-        <div id="about">
-        <section id="4" class="row">
-            <article class="large-6 columns">
-               <!-- <img src="imgs/nomo-portrait1.jpg" />-->
-            </article>
-            <article class="large-6 columns">
-                <p>Anthony Nomorosa is a pure geek. He's also a designer and front-end developer based in San Francisco. He's garnered solid experience with clients ranging from #OWS to gaming communities. His latest experience with NextGen Climate allowed for his work to be used in an attempt to avert the disasters of climate change in the 2014 Mid-Term elections.</p>
-                <br />
-                <p>When not actively trying to save the world, Anthony is passionate about exploring it.</p>
-            </article>
-        </section>
-    </div>
-    </div>
-    </section>
-    <div id="footer">
-        <p>&copy; 2013 Anthony Nomorosa. All Rights Reserved.</p>
-    </div>
-    <!----- Sticky Nav ----->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                
-                //Calculate the height of <header>
-                //Use outerHeight() instead of height() if have padding
-                var aboveHeight = $('header').outerHeight();
-                
-                // when scroll
-                $(window).scroll(function(){
-                    
-                    //if scrolled down more than the header's height
-                    if ($(window).scrollTop() > aboveHeight){
-                        
-                        // if yes, add "fixed" class to the <nav>
-                        // add padding top to the #content (value is same as the height of the nav)
-                        $('nav').addClass('fixed').css('top','0').next().css('padding-top','60px');
-                    } else {
-                        
-                        // when scroll up or less than aboveHeight, remove the "fixed" class, and the padding-top
-                        $('nav').removeClass('fixed').next().css('padding-top','0');
-                    }
-                });
-            });
-        </script>
-    <!----- Smooth Scroll ----->
-        <script>
-            $(document).ready(function() {
-                
-                // Click event for any anchor tag that's href starts with #
-                $('a[href^="#"]').click(function(event) {
-                    
-                    // The id of the section we want to go to.
-                    var id = $(this).attr("href");
-                    
-                    // An offset to push the content down from the top.
-                    var offset = 60;
-                    
-                    // Our scroll target : the top position of the
-                    // section that has the id referenced by our href.
-                    var target = $(id).offset().top - offset;
-                    
-                    // The magic...smooth scrollin' goodness.
-                    $('html, body').animate({scrollTop:target}, 500);
-                    
-                    //prevent the page from jumping down to our section.
-                    event.preventDefault();
-                });
-            });
-        </script>
-    </body>
+        <div class="row">
+          <div class="large-12 columns mockups">
+                  <img src="img/fraveltravel/mockup-fraveltravel.png" />
+              <p>Wordpress Design<br />
+              <strong>Role:</strong> Interactive Design, Front-end Development<br />
+              <strong>Tools:</strong> Photoshop, Wordpress</p>
+          </div>
+        </div>
+    <!------ END PORTFOLIO ------> 
+      <!------ PROJECT NAV ------> 
+       <div class="row">
+            <div class="small-4 columns">
+                <p></p>
+            </div>
+            <div class="small-4 columns project_nav-bot">
+                <p>
+                    <strong><a href="occupydc.html">&lt;</a></strong>
+                    <a href="index.html">Home</a>
+                    <strong><a href="c6fn.html">&gt;</a></strong>
+                </p>    
+            </div>
+            <div class="small-4 columns">
+            </div>
+               
+        </div>
+    <!------ END PROJECT NAV ------> 
+    <!------ FOOTER ------->
+        <div class="row">
+          <div class="large-3 columns">
+            <div id="footer">
+              <p>Anthony Nomorosa <span class="backslash">/</span> <a href="http://linkd.in/1c1MCmU" target="_blank">LinkedIn</a><br />
+                  design.nomorosa@gmail.com<br />
+                  <a href="https://twitter.com/AGNomorosa" target="_blank">Twitter</a> <span class="backslash">/</span> <a href="https://instagram.com/agnomorosa/" target="_blank">Instagram</a></p>
+            </div>
+          </div>
+          <div class="large-9 medium-9 columns">
+          </div>
+        </div>
+    <!------ END FOOTER -------> 
+  </body>
 </html>
+  
+  
