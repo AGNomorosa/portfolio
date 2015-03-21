@@ -1,0 +1,99 @@
+/* 
+	Optional file for easily change colors.
+	Color scheme: Blue
+*/
+
+/* ==== Background motifs ==== */
+/* If you want to change header's background
+header 		 {background: #111 url(../images/motifs/random_grey_variations.png) repeat;}
+.dark header {background: #111 url(../images/motifs/random_grey_variations.png) repeat;}
+*/
+
+/* If you want to change main body's background 
+body {background: #eee url("../images/motifs/grangray.png") repeat;}
+*/
+
+/* If you want to change .dark sections background
+.dark {background: #212121 url("../images/motifs/random_grey_variations.jpg") repeat; color: #fff;}
+*/
+
+
+
+/* ==== Top navigation ==== */
+header,
+nav a, 
+nav a:visited,
+nav a:focus {
+	border-top-color: #1f1f1f;
+	color: #333;
+	/*text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.8);*/
+}
+nav a:hover {
+	color: #c1c1c1;
+	border-top-color: #c1c1c1;
+}
+header.dark,
+.dark nav a, 
+.dark nav a:visited,
+.dark nav a:focus {
+	color: #ccc;
+	text-shadow: none;
+}
+.dark nav a:hover {
+	color: #fff;
+	border-top-color: #c1c1c1;
+}
+/* Active page link */
+nav a.active,
+nav a.active:focus,
+.dark nav a.active,
+.dark nav a.active:focus {
+	/*color: #2f96d8;
+	border-top-color: #37b1ff;*/
+	color: #c73f28;
+	border-top-color: #c73f28;
+}
+nav a.active:hover {
+	color: #000;
+	/*border-top-color: #37b1ff;*/
+	border-top-color: #c73f28;
+}
+.dark nav a.active:hover {
+	color: #fff;
+	/*border-top-color: #37b1ff;*/
+	border-top-color: #c73f28;
+}
+nav a span {
+	color: #999;
+	font-size: 12px;
+	font-weight	: normal;
+}
+
+/* Content links */
+a, a:visited {color: #c73f28;}
+a:hover, a:focus {color: #fff;}
+
+/* Content links in dark context */
+.dark a, .dark a:visited {/*color:#37b1ff;*/color: #c73f28;}
+.dark a:hover, .dark a:focus {color: #fff;}
+.portfolio-item {
+	margin: 5px 0 5px 0;
+	box-shadow: 1px 1px 10px #202020;
+	-webkit-box-shadow: 1px 1px 10px #202020;
+	-moz-box-shadow: 1px 1px 10px #202020;
+}
+.work-thumb {
+	width: 250px;
+	box-shadow: 1px 1px 10px #202020;
+	-webkit-box-shadow: 1px 1px 10px #202020;
+	-moz-box-shadow: 1px 1px 10px #202020;
+}
+.work-thumb:hover {
+	opacity: 0.7;
+}
+.nav-icons {
+	margin: 0 0 0 6px;
+}
+.orange {
+	color: #c74128;
+}
