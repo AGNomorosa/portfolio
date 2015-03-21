@@ -59,8 +59,8 @@ nav li:last-child a {
 	border-right: 0;
 }
 nav a:hover, nav a:active {
-	background-color: rgba(54, 71, 123, 0.7);
-    color: #fff;
+	/*background-color: rgba(54, 71, 123, 0.7);*/
+    color: #C0392B;
 }
 nav a#pull {
 	display: none;
@@ -69,6 +69,7 @@ nav a#pull {
 @media screen and (max-width: 600px) {
 	nav { 
   		height: auto;
+	background: rgb(111, 111, 111);
   	}
   	nav ul {
   		width: 100%;
@@ -81,8 +82,8 @@ nav a#pull {
   		position: relative;
   	}
   	nav li a {
-		border-bottom: 1px solid #576979;
-		border-right: 1px solid #576979;
+		border-bottom: 1px solid #6f6f6f;
+		border-right: 1px solid #6f6f6f;
 	}
   	nav a {
 	  	text-align: left;
@@ -102,9 +103,10 @@ nav a#pull {
 	}
 	nav a#pull {
 		display: block;
-		background-color: #283744;
+		background-color: #6f6f6f;
 		width: 100%;
 		position: relative;
+        padding: 5px 0;
 	}
 	nav a#pull:after {
 		content:"";
@@ -145,10 +147,12 @@ nav a#pull {
         display: none;
     }
 }
-/***** Header - Definition *****/
+/********************************
+***** Header - Definition ******
+******************************/
 #header {
     width: 100%;
-    background: url("../imgs/bkgs/header-bkg-short.jpg") no-repeat center fixed;
+    background: url("../imgs/bkgs/hero-golden_gate2a.jpg") no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -156,12 +160,12 @@ nav a#pull {
 #top-nav {
     width: 100%;
     border-bottom: 1px solid #fff;
-    padding-bottom: 30px;
-    margin-top: 30px;
+    padding-bottom: 15px;
+    margin-top: 15px;
     color: #fff;
 }
 #define {
-    margin: 150px 0 150px 0;
+    margin: 100px 0;
 }
 #header h1 {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -173,7 +177,7 @@ nav a#pull {
 }
 #header p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 25px;
     color: #fff;
     padding: 0;
@@ -184,14 +188,14 @@ nav a#pull {
 }
 .define_noun{
     font-style: italic;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 100;
 }
 /***** Portfolio *****/
 #portfolio {
     width: 100%;
     background: url("../imgs/bkgs/port-bkg.png") repeat;
-    padding: 0 0 18.750em 0;
+    padding: 0 0 9em 0;
 }
 .port-box {
     width: 320px;
@@ -203,7 +207,12 @@ nav a#pull {
     position: relative;
     text-align: center;
     cursor: default;
- 
+ }
+.face-ngc {
+    background-color: rgba(255, 70, 6, 1);
+}
+.face-fairshake {
+    background-color: rgba(0, 35, 94, 1);
 }
 .face-c6 {
     background-color: rgba(179, 34, 41, 1);
@@ -213,9 +222,6 @@ nav a#pull {
 }
 .face-occupy {
     background-color: rgba(199, 62, 40, 1);
-}
-.face-ritmodmv {
-    background-color: rgba(199, 28, 31, 1);
 }
 .face-eventbrite {
     background-color: rgba(241, 105, 36, 1);
@@ -292,15 +298,15 @@ nav a#pull {
 #process {
     width: 100%;
     background-color: #c0392b;
-    padding: 9.75em 0 18.750em 0;
+    padding: 8.75em 0 8.75em 0;
 }
 #process h1 {
     font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 6.875em;
+    font-size: 5.625em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    padding: 0;
+    padding: 0 0 10px 0;
     margin: 0;
     color: #fff;
 }
@@ -310,18 +316,18 @@ nav a#pull {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0;
     margin: 0;
     color: #fff;
 }
 #process p {
     font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 1.0em;
+    font-size: 1.25em;
     font-weight: 400;
     text-align: left;
     padding: 0;
     margin: 0;
-    line-height: 20px;
+    line-height: 24px;
     color: #fff;
 }
 .process-icons {
@@ -331,9 +337,9 @@ nav a#pull {
 /* ABOUT ME */
 #about {
     width: 100%;
-    background: url("../imgs/bkgs/about2-bg.jpg") no-repeat center fixed;
+    background: url("../imgs/bkgs/about2-bkg3.jpg") no-repeat center fixed;
     background-size: cover;
-    padding: 9.75em 0 6em 0;
+    padding: 1em 0 1em 0;
 }
 #about h1 {
     font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -347,35 +353,20 @@ nav a#pull {
 }
 #about p {
     font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 1.0em;
+    font-size: 1.25em;
     font-weight: 400;
     text-align: left;
-    padding: 0.938em;
-    margin: 50px 0 0 0;
-    line-height: 20px;
+    padding: 5px 0;
+    margin: 3px 0;
+    line-height: 2.0em;
     color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    display: inline;
 }
 /* FOOTER */
-#quote {
-    width: 100%;
-    background-color: #fff;
-    padding: 3.0em 0 3.0em 0;
-}
-#quote h1 {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1.95em;
-    font-style: italic;
-}
-#quote h3 {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    text-align: center;
-    font-weight: 300;
-}
 #contact {
     width: 100%;
-    background-color: #2b3e51;
+    background-color: #646e6f;
     padding: 0;
 }
 #contact #socialmedia {
@@ -384,17 +375,16 @@ nav a#pull {
 }
 .socialicons {
     margin: 0 auto;
-    padding: 10px 10px 20px 10px;   
+    padding: 5px 10px 15px 10px;   
 }
 #footer {
     background-color: #1a1a1a;
     text-align: center;
-    height: 6.667em;
+    padding: 1.5em 0 0.25em 0;
     width: 100%;
 }
 #footer p {
     font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    padding-top: 2.333em;
     color: #989696;
 }
 /****** INNER PAGES ******/
@@ -416,7 +406,7 @@ nav a#pull {
     font-weight: 300;
     font-size: 1.325em;
     color: #e6e6e6;
-    padding:1em 0 3em 0;
+    padding:0 0 2em 0;
     margin:0;
 }
 #portfolio-inner {
@@ -427,17 +417,15 @@ nav a#pull {
 .inner-img {
     width: 95%;
     padding:0;
-    margin: 3em auto;
+    margin: 1em auto;
 }
 /* Other Works */
 #case-studies {
     background: #bdc3c7;
 }
 .case_study {
-    width: 159px;
-    height: 159px;
-    margin: 10px;
-    float: left;
+    width: 330px;
+    height: 70px;
     border: none;
     overflow: hidden;
     position: relative;
@@ -445,8 +433,8 @@ nav a#pull {
     cursor: default;
 }
 .case_study .face {
-    width: 159px;
-    height: 159px;
+    width: 330px;
+    height: 70px;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -455,14 +443,25 @@ nav a#pull {
     opacity: 0;
     transition: 300ms; 
 }
+.case_study h3 {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    color: #000;
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    opacity:1;
+    background: transparent;
+    margin: 20px auto;
+    transition: 300ms;
+}
 .case_study h4 {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 200;
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 16px;
-    margin: 20px 0 0 0;
+    font-size: 24px;
     opacity:0;
     background: transparent;
     margin: 20px auto;
@@ -505,9 +504,35 @@ nav a#pull {
     opacity:1;
     transition-delay: 0.15s;
 }
+/* NextGen Climate */
+.header-ngc {
+    background-color: rgba(255, 70, 6, 1);
+}
+.inner-ngc h1 {
+    font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.25em;
+    color: rgba(255, 70, 6, 1);
+    line-height: 56px;
+    margin: 18px 0;
+    padding: 0;
+}
+.inner-ngc p {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #0a0a0c;
+}
+.p-label {
+    text-align: center;
+}
+.inner-ngc a {
+    color: rgba(255, 70, 6, 1);
+}
 /* Twitch Gaming Experience */
 .header-twitch {
-    background-color: rgba(0, 37, 150, 1);
+    background-color: rgba(255, 70, 6, 1);
 }
 .inner-twitch h1 {
     font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -515,7 +540,9 @@ nav a#pull {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3.25em;
+    margin: 18px 0;
     color: rgba(0, 37, 150, 1);
+    line-height: 56px;
 }
 .inner-twitch p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -525,25 +552,27 @@ nav a#pull {
 .inner-twitch a {
     color: rgba(0, 37, 150, 1);
 }
-/* Ritmo DMV */
-.header-ritmodmv {
-    background-color: rgba(199, 28, 31, 1);
+/* Fair Shake */
+.header-fairshake {
+    background-color: rgba(30, 43, 90, 1);
 }
-.inner-ritmodmv h1 {
+.inner-fairshake h1 {
     font-family: Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3.25em;
-    color: rgba(199, 28, 31, 1);
+    margin: 18px 0;
+    line-height: 56px;
+    color: rgba(30, 43, 90, 1);
 }
-.inner-ritmodmv p {
+.inner-fairshake p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 1em;
     color: #0a0a0c;
 }
-.inner-ritmodmv a {
-    color: rgba(199, 28, 31, 1);
+.inner-fairshake a {
+    color: rgba(30, 43, 90, 1);
 }
 /* Eventbrite */
 .header-eventbrite {
@@ -556,6 +585,8 @@ nav a#pull {
     font-weight: 700;
     font-size: 3.25em;
     color: rgba(241, 105, 36, 1);
+    line-height: 56px;
+    margin: 18px 0;
 }
 .inner-eventbrite p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -576,6 +607,8 @@ nav a#pull {
     font-weight: 700;
     font-size: 3.25em;
     color: rgba(179, 34, 41, 1);
+    line-height: 56px;
+    margin: 18px 0;
 }
 .inner-c6fn p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -596,6 +629,8 @@ nav a#pull {
     font-weight: 700;
     font-size: 3.25em;
     color: rgba(199, 62, 40, 1);
+    line-height: 56px;
+    margin: 18px 0;
 }
 .inner-occupy p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -616,6 +651,8 @@ nav a#pull {
     font-weight: 700;
     font-size: 3.25em;
     color: rgba(34, 179, 174, 1);
+    line-height: 56px;
+    margin: 18px 0;
 }
 .inner-junu p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -636,6 +673,8 @@ nav a#pull {
     font-weight: 700;
     font-size: 3.25em;
     color: rgba(0, 177, 120, 1);
+    line-height: 56px;
+    margin: 18px 0;
 }
 .inner-fraveltravel p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -1686,11 +1725,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: #C0392B;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #2795b6; }
+    color: #C0392B; }
   a img {
     border: none; }
 
