@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Mainstreet Homes</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="imagetoolbar" content="false">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<link href="../trunk/galleria.css" rel="stylesheet" type="text/css" media="screen">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="../trunk/jquery.galleria.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+		
+		$('.gallery_demo_unstyled').addClass('gallery_demo'); // adds new class name to maintain degradability
+		
+		$('ul.gallery_demo').galleria({
+			history   : true, // activates the history object for bookmarking, back-button etc.
+			clickNext : true, // helper for making the image clickable
+			insert    : '#main_image', // the containing selector for our main image
+			onImage   : function(image,caption,thumb) { // let's add some image effects for demonstration purposes
+				
+				// fade in the image & caption
+				image.css('display','none').fadeIn(1000);
+				caption.css('display','none').fadeIn(1000);
+				
+				// fetch the thumbnail container
+				var _li = thumb.parents('li');
+				
+				// fade out inactive thumbnail
+				_li.siblings().children('img.selected').fadeTo(500,0.3);
+				
+				// fade in active thumbnail
+				thumb.fadeTo('fast',1).addClass('selected');
+				
+				// add a title for the clickable image
+				image.attr('title','Next image >>');
+			},
+			onThumb : function(thumb) { // thumbnail effects goes here
+				
+				// fetch the thumbnail container
+				var _li = thumb.parents('li');
+				
+				// if thumbnail is active, fade all the way.
+				var _fadeTo = _li.is('.active') ? '1' : '0.3';
+				
+				// fade in the thumbnail when finnished loading
+				thumb.css({display:'none',opacity:_fadeTo}).fadeIn(1500);
+				
+				// hover effects
+				thumb.hover(
+					function() { thumb.fadeTo('fast',1); },
+					function() { _li.not('.active').children('img').fadeTo('fast',0.3); } // don't fade out if the parent is active
+				)
+			}
+		});
+	});
+	
+	</script>
+	<style media="screen,projection" type="text/css">
+	
+	/* BEGIN DEMO STYLE */
+	*{margin:0;padding:0}
+	body{padding:20px;background:white;text-align:center;background:#D9D3A4;}
+	h1,h2{font:bold 80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+	a{color:#348;text-decoration:none;outline:none;}
+	a:hover{color:#67a;}
+	.caption{font-style:italic;color:#887;}
+	.demo{position:relative;margin-top:2em;}
+	.gallery_demo{width:702px;margin:0 auto;}
+	.gallery_demo li{width:75px;height:56px;border:0px double #111;margin: 10 20px;background:#8B9B93;}
+	.gallery_demo li div{left:240px}
+	.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
+	
+	#main_image{margin:0 auto 30px auto;width:650px;background:#D9D3A4;}
+	#main_image img{margin-bottom:0px;}
+	
+	.nav{padding-top:0px;clear:both;font:80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+	
+	.info{text-align:left; margin:0px auto;border-top:1px dotted #221;padding-top:0px;}
+	.info p{margin-top:0;}
+	
+	
+    </style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4564958-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+</head>
+<body>
+
+<div class="demo">
+<div id="main_image"></div>
+<p class="nav"><a href="#" onclick="$.galleria.prev(); return false;" class="black">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;" class="black">next &raquo;</a></p><br />
+<ul class="gallery_demo_unstyled" style="background-color:#8B9B93; padding:10px; width:750; height:125px;">
+ <li class="active"><img src="img/NVHomes/single/01.jpg" alt="Flowing Rock" title=""></li>
+ 
+  <li><img src="img/NVHomes/single/02.jpg" alt="Flowing Rock" title=""></li>
+   <li><img src="img/NVHomes/single/03.jpg" alt="Flowing Rock" title=""></li>
+    <li><img src="img/NVHomes/single/04.jpg" alt="Flowing Rock" title=""></li>
+     <li><img src="img/NVHomes/single/05.jpg" alt="Flowing Rock" title=""></li>
+      <li><img src="img/NVHomes/single/06.jpg" alt="Flowing Rock" title=""></li>
+       <li><img src="img/NVHomes/single/07.jpg" alt="Flowing Rock" title=""></li>
+        <li><img src="img/NVHomes/single/08.jpg" alt="Flowing Rock" title=""></li>
+         <li><img src="img/NVHomes/single/09.jpg" alt="Flowing Rock" title=""></li>
+          <li><img src="img/NVHomes/single/10.jpg" alt="Flowing Rock" title=""></li>
+           <li><img src="img/NVHomes/single/11.jpg" alt="Flowing Rock" title=""></li>
+            <li><img src="img/NVHomes/single/12.jpg" alt="Flowing Rock" title=""></li>
+             <li><img src="img/NVHomes/single/13.jpg" alt="Flowing Rock" title=""></li>
+              <li><img src="img/NVHomes/single/14.jpg" alt="Flowing Rock" title=""></li>
+               <li><img src="img/NVHomes/single/15.jpg" alt="Flowing Rock" title=""></li>
+                <li><img src="img/NVHomes/single/16.jpg" alt="Flowing Rock" title=""></li>
+                 <li><img src="img/NVHomes/single/17.jpg" alt="Flowing Rock" title=""></li>
+                 
+
+        
+
+    
+    
+    
+    
+    </ul>
+
+</div>
+
+</body>
+</html>

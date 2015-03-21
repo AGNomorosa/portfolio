@@ -1,0 +1,470 @@
+body {
+	background: url('images/bkgrnd.jpg') no-repeat center top;
+	background-color: #ebebd9;
+}
+#global {
+	position: abosulte;
+	margin-top: -8px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	background-color: #fcfcf9;
+	box-shadow: 1px 0px 50px #727272, -1px 0px 50px #727272;
+		-moz-box-shadow: 1px 0px 50px #727272, -1px 0px 50px #727272;
+		-webkit-box-shadow: 1px 0px 50px #727272, -1px 0px 50px #727272;
+}
+#social_media-icons {
+	float: right;
+	width: 70px;
+	height: 37px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.logo {
+	margin-left: 250px;
+	margin-top: 40px;
+}
+/*Navigation*/
+#top_nav {
+	width: 850px;
+	height: 39px;
+	background-color: #8f8c4f;
+	text-align: center;
+}
+#top_nav p {
+	padding-top: 11px;
+}
+#top_nav a {
+	text-decoration: none;
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 16px;
+	color: #fff;
+}
+#top_nav a:hover {
+	color: #000;
+}
+/*Dropdown menu*/
+#community-drop {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	background-color: #8f8c4f;
+	margin-left: 55px;
+	padding-left: 15px;
+	padding-top: 5px;
+	margin-top: -10px;
+	line-height: 24px;
+	background-color:rgba(141,139,84,0.8);
+	visibility: hidden;
+	z-index: 11;
+}
+#community-drop a {
+	text-decoration: none;
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 14px;
+	color: #fff;
+}
+#community-drop a:hover {
+	color: #000;
+}
+#homes-drop {
+	position: relative;
+	width: 150px;
+	height: 100px;
+	background-color: #8f8c4f;
+	margin-left: 160px;
+	padding-left: 15px;
+	padding-top: 5px;
+	margin-top: -154px;
+	line-height: 24px;
+	background-color:rgba(141,139,84,0.8);
+	visibility: hidden;
+	z-index: 15;
+}
+#homes-drop a {
+	text-decoration: none;
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 14px;
+	color: #fff;
+}
+#homes-drop a:hover {
+	color: #000;
+}
+/*Content container*/
+#content {
+	position: relative;
+	width: 720px;
+	margin-left: 70px;
+	margin-top: -80px;
+	z-index: 1;
+}
+#content p {
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 14px;
+	padding-left: 6px;
+	padding-right: 7px;
+}
+.title-top {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.title {
+	margin-top: 20px;
+}
+.subtitle {
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 22px;
+	font-style: italic;
+	color: #556293;
+	padding-left: 6px;
+}
+.subtitlep {
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 17px;
+	color: #556293;
+	padding-left: 6px;
+}
+.left-bullets {
+	position: relative;
+	width: 300px;
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 14px;
+}
+.right-bullets {
+	position: relative;
+	float: right;
+	width: 300px;
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 14px;
+}
+/*Footer*/
+#footer {
+	position: relative;
+	background: url('images/footer.jpg') no-repeat;
+	width: 850px;
+	height: 268px;
+	text-align: center;
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 10px;
+	color: #8f8c4f;
+	clear: both;
+}
+#footer p {
+	padding-top: 77px;
+}
+#footer a {
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 10px;
+	color: #8f8c4f;
+	text-decoration: none;
+}
+/*Home*/
+#flashbox {
+	position: relative;
+	width:700px;
+	height: 335px;
+	text-align:center;
+	margin-bottom:40px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+	z-index: 0;
+}
+/*Community*/
+#community-copy {
+	position: relative;
+	width: 400px;
+}
+.community-img {
+	position: relative;
+	float: right;
+	width: 293px;
+	height: 183px;
+	margin-top: 55px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+/*Lifestyle*/
+.lifestyle-img {
+	position: relative;
+	float: right;
+	margin-right: 35px;
+	margin-top: 13px;
+	width: 295px;
+	height: 184px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+/*Community Plan*/
+#community_plan {
+	width: 706px;
+	height: 514px;
+	margin-top: 25px;
+	background: url('images/community_plan-img.jpg') no-repeat;
+	background-color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+/*Amenities*/
+.amenities-img {
+	position: relative;
+	float: right;
+	width: 228px;
+	height: 204px;
+	margin-top: 12px;
+	margin-right: 25px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+#sub-amenities {
+	position: relative;
+	width: 720px;
+	clear: both;
+	padding-top: 10px;
+}
+.amenities-left {
+	position: relative;
+	width: 376px;
+	float: left;
+}
+.amenities-right {
+	position: relative;
+	width: 328px;
+	float: right;
+}
+.amenities-title {
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 18px;
+	color: #8f8c4f;
+	font-weight: lighter;
+}
+/*Places 2 Go*/
+.places-container {
+	position: relative;
+	width: 720px;
+	height: 300px;
+}
+.places2go-right {
+	position: relative;
+	width: 300px;
+	float: right;
+	margin-bottom: 25px;
+}
+.places2go-left {
+	position: relative;
+	width: 300px;
+	float: left;
+	margin-bottom: 25px;
+}
+.places2go-img {
+	position: relative;
+	display: block;
+	width: 296px;
+	height: 182px;
+	background-position: 0px 0px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+.places2go-img:hover {
+	background-position: -296px 0px;
+}
+.shopping {
+	background: url("images/places2go-shopping.jpg") no-repeat;
+}
+.dining {
+	background: url("images/places2go-dining.jpg") no-repeat;
+}
+.attractions {
+	background: url("images/places2go-attractions.jpg") no-repeat;
+}
+.entertainment {
+	background: url("images/places2go-entertainment.jpg") no-repeat;
+}
+.beach_parks {
+	background: url("images/places2go-beach_parks.jpg") no-repeat;
+}
+.golf {
+	background: url("images/places2go-golf.jpg") no-repeat;
+}
+.museums {
+	background: url("images/places2go-museum.jpg") no-repeat;
+}
+.area_events {
+	background: url("images/places2go-area_events.jpg") no-repeat;
+}
+.economic_advantages {
+	background: url("images/places2go-economic_advantages.jpg") no-repeat;
+}
+.places2go-list {
+	line-height: 23px;
+}
+.places2go-list a {
+	color: #556293;
+}
+.places2go-list a {
+	text-decoration: none;
+}
+/*Homes*/
+#homes-title_img {
+	width: 686px;
+	height: 313px;
+	margin-bottom: 25px;
+	background: url("images/homes-title_img.jpg") no-repeat;
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+.homes-img {
+	position: relative;
+	float: right;
+	width: 234px;
+	height: 353px;
+	margin-top: 12px;
+	margin-right: 23px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+#homes_img-container {
+	position: relative;
+	margin-top: 60px;
+}
+/*Develpment Plan*/
+#slideshow {
+	padding: 0px;
+	width: 706px;
+	height: 530px;
+	margin-top: 25px;
+	margin-left: 15px;
+	position: relative;
+	border: 2px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+
+.slider-item {
+	height: 900px;
+	margin:0;
+	padding:0;
+	background-repeat: no-repeat;
+}
+.slider_content_inner img { 
+	border: none; margin:0 auto; 
+}
+/*NVHomes*/
+#nvhomes-title_img {
+	width: 686px;
+	height: 313px;
+	margin-bottom: 25px;
+	background: url("images/nvhomes-title_img.jpg") no-repeat;
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+.nvhomes-img {
+	position: relative;
+	display: block;
+	width: 336px;
+	height: 209px;
+	margin-top: 25px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+.nvhomes-single {
+	background: url("images/nvhomes-single_family_img.jpg") no-repeat;
+	background-position: -342px 0px;
+}
+.nvhomes-single:hover {
+	background-position: 0 0;
+}
+.nvhomes-villas {
+	background: url("images/nvhomes-villa_img.jpg") no-repeat;
+	background-position: -336px 0px;
+}
+.nvhomes-villas:hover {
+	background-position: 0 0;
+}
+/*Main St Homes*/
+#main_st-title_img {
+	width: 684px;
+	height: 312px;
+	margin-bottom: 25px;
+	background: url("images/main_st-title_img.jpg") no-repeat;
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+.main_st-img {
+	position: relative;
+	display: block;
+	width: 365px;
+	height: 209px;
+	margin-top: 25px;
+	margin-left: 191px;
+	background: url("images/main_st-single-img.jpg") no-repeat;
+	background-position: -365px 0px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 10px 1px #888;
+		-moz-box-shadow: 0 0 10px 1px #888;
+		-webkit-box-shadow: 0 0 10px 1px#888;
+}
+.main_st-img:hover {
+	background-position: 0 0;
+}
+/*News*/
+.news-link {
+	font-family: Palatino Linotype, Book Antiqua, Times New Roman, serif;
+	font-size: 14px;
+	color: #556293;
+}
+/*Location*/
+#hours {
+	position:  relative;
+	width: 200px;
+	float: left;
+}
+#directions {
+	position:  relative;
+	width: 450px;
+	line-height: 20px;
+	float: right;
+}
+/*Contact*/
+#contact_form {
+	position: relative;
+	width: 515px;
+}
+/*TLA Logo*/
+#tla-logo {
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	/*background: url("images/logo-tla.png") no-repeat;*/
+}
+#tla-logo img {
+	float: right;
+}

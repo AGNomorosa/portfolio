@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title></title>
+
+<script  type="text/javascript">
+/*<![CDATA[*/
+
+var scrollto={
+
+ Init:function(ms){
+  var as=document.getElementsByTagName('A')
+  for (var ary=[],nme,max=0,z0=0;z0<as.length;z0++){
+   if (as[z0].href&&as[z0].href.indexOf('#')!=-1&&as[z0].search==location.search&&(as[z0].pathname==location.pathname||'/'+as[z0].pathname==location.pathname)){
+    ary.push([as[z0]]);
+    nme=as[z0].href.split('#')[1];
+    for (var z0a=0;z0a<as.length;z0a++){
+     if (!as[z0a].href&&as[z0a].name&&as[z0a].name==nme){
+      ary[ary.length-1][1]=as[z0a];
+      max=Math.max(max,this.top(as[z0a]));
+      break;
+     }
+    }
+   }
+  }
+  for (var oop,z1=0;z1<ary.length;z1++){
+   if (ary[z1].length==2){
+    this.addevt(ary[z1][0],'click','slide',z1);
+   }
+  }
+  this.ary=ary;
+  this.ms=ms||1000;
+  this.to=null;
+  this.max=max;
+ },
+
+ slide:function(e,nu){
+  this.sf=[this.top(this.ary[nu][0]),this.top(this.ary[nu][1])];
+  clearTimeout(this.to);
+  this.x=this.scrollx();
+  this.mS=this.ms*(Math.abs((this.sf[1]-this.sf[0])/this.max));
+  this.inc=Math.PI/(2*this.mS);
+  this.srttime=new Date().getTime();
+  this.cng();
+  if (window.event){
+   window.event.cancelBubble=true;
+   window.event.returnValue=false;
+  }
+  if (e.preventDefault&&e.stopPropagation){
+   e.preventDefault();
+   e.stopPropagation();
+  }
+ },
+
+ cng:function(){
+  var ms=new Date().getTime()-this.srttime;
+  window.scroll(this.x,Math.floor((this.sf[1]-this.sf[0])*Math.sin(this.inc*ms)+this.sf[0]));
+  if (ms<this.mS) this.to=setTimeout(function(oop){return function(){oop.cng();}}(this),10);
+  else {
+   window.scroll(this.x,this.sf[1]);
+  }
+ },
+
+ addevt:function(o,t,f,p){
+  var oop=this;
+  if (o.addEventListener){
+   o.addEventListener(t,function(e){ return oop[f](e,p);}, false);
+  }
+  else if (o.attachEvent){
+   o.attachEvent('on'+t,function(e){ return oop[f](e,p); });
+  }
+  else {
+   var prev=o['on'+t];
+   if (prev) o['on'+t]=function(e){ prev(e); oop[f](e,p); };
+   else o['on'+t]=o[f];
+  }
+ },
+
+ top:function(obj){
+  var rtn=obj.offsetTop;
+  while(obj.offsetParent!=null){
+   var objp=obj.offsetParent;
+   rtn+=objp.offsetTop;
+   obj=objp;
+  }
+  return rtn;
+ },
+
+ scrollx:function (){
+  if (window.innerHeight) return window.pageXOffset;
+  else if (document.documentElement.clientHeight) return document.documentElement.scrollLeft;
+  return document.body.scrollLeft;
+ }
+
+
+}
+
+
+/*]]>*/
+</script>
+
+</head>
+<!-- scrollto.Init(speed in miliseconds); -->
+<body onload="scrollto.Init(1000);">
+<br />
+<a name="Top">&nbsp;</a>
+<a href="#fred" class="slide" >One</a>
+<div style="height:800px;" ></div>
+<a name="fred" style="padding-bottom:900px;">Wat?</a>

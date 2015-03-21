@@ -1,0 +1,224 @@
+#container {
+	background-color: #000;
+	width: 985px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -8px;
+	-moz-box-shadow: 5px 6px 7px #000000, -5px 6px 7px #000000;
+	-webkit-box-shadow: 5px 6px 7px #000000, -5px 6px 7px #000000;
+	box-shadow: 5px 6px 7px #000000, -5px 6px 7px #000000;
+}
+#search_box {
+	position: relative;
+	width: 985px;
+	padding-top: 20px;
+}
+#search_box img {
+	float: right;
+	position: relative;
+	padding-right:15px;
+	padding-top: 15px;
+}
+#head {
+	background-image: url(images/bg-head.png);
+	position: relative;
+	width: 985px;
+	background-repeat: no-repeat;
+	background-color: #272727;
+}
+#nav {
+	background-image: url(images/bg-nav.png);
+	height: 95px;
+	width: 985px;
+	position: relative;
+	clear: both;
+}
+.nav-rollover {
+	position: relative;
+	height: 48px;
+	top: -20px;
+}
+#dropdown {
+	position: relative;
+	z-index: 20;
+	height: 283px;
+	width: 168px;
+	left: 706px;
+	margin-top:-33px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-top-color: #CACACA;
+	border-right-color: #CACACA;
+	border-bottom-color: #CACACA;
+	border-left-color: #CACACA;
+	visibility:hidden;
+}
+.title_img {
+	height: 307px;
+	width: 838px;
+	margin-left: 70px;
+	position: relative;
+	border-top-color: #BFBFBF;
+	border-right-color: #BFBFBF;
+	border-bottom-color: #BFBFBF;
+	border-left-color: #BFBFBF;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+#content {
+	background-image: url(images/bg-content.png);
+	position: relative;
+	width: 985px;
+	background-repeat: no-repeat;
+	background-color: #2d2d2d;
+	margin-top: 2px;
+	z-index:10;
+}
+#footer {
+	background-image: url(images/bg-footer.png);
+	position: relative;
+	height: 170px;
+	width: 985px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #B5C7D8;
+	margin-top: -12px;
+}
+#footer a{
+	background-image: url(images/bg-footer.png);
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #B5C7D8;
+	margin-top: -13px;
+	text-decoration:none;
+}
+.hr {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #B5C7D8;
+	border-right-color: #B5C7D8;
+	border-bottom-color: #B5C7D8;
+	border-left-color: #B5C7D8;
+	width:52%;
+	position:relative;
+	margin-left:180px;
+}
+#copyright {
+	float: right;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 20px;
+	font-size: 12px;
+}
+.stories {
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	height: 328px;
+	width: 266px;
+	font-size: 14px;
+	color: #000;
+	padding: 10px;
+	float: left;
+}
+#bio {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #999;
+	position: relative;
+	width: 400px;
+	left: 70px;
+}
+.bio_text {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #999;
+	font-style: italic;
+}
+h4 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+}
+
+#pt_nav {
+	position: relative;
+	height: 621px;
+	width: 246px;
+	float: right;
+	margin-right: 74px;
+	padding-left: 60px;
+	z-index:10;
+}
+.pt_box {
+	height: 175px;
+	width: 246px;
+	margin-bottom: 4px;
+}
+#head_title {
+	margin-left: 72px;
+	position: relative;
+}
+#pt_nav img {
+	padding-bottom: 10px;
+	position: relative;
+}
+#other_classes {
+	position: relative;
+	width: 838px;
+	margin-left:72px;
+	height: 360px;
+	clear: both;
+}
+.other_class-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+}
+.thumb {
+	position: relative;
+	width: 233px;
+	float: left;
+	margin-top: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #999;
+}
+.thumb img {
+	padding-bottom: 10px;
+	position: relative;
+}
+.thumb a {
+	position: relative;
+	float: right;
+	height: 31px;
+	width: 116px;
+}
+#class_info {
+	position: relative;
+	width: 838px;
+	margin-left: 72px;
+	padding-top: 15px;
+}
+#class_text a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: italic;
+	color: #b5c8d8;
+	text-decoration: underline;
+	font-weight: lighter;
+}
+#class_text {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #999;
+	position: relative;
+	width: 550px;
+}
+.requirement {
+	font-size: 8px;
+	color: #456350;
+	vertical-align: super;
+}
