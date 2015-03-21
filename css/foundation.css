@@ -33,7 +33,7 @@ nav {
 nav ul {
 	padding: 0;
 	margin: 0 auto;
-	width: 600px;
+	width: 1050px;
 	height: 25px;
 }
 nav li {
@@ -42,11 +42,12 @@ nav li {
 }
 nav a {
 	color: #fff;
-	display: inline-block;
+	display: inline;
 	width: 100px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 35px;
+    padding-left: 25px;
 	/*text-shadow: 1px 1px 0px #283744;*/
 }
 /*nav li a {
@@ -194,7 +195,7 @@ nav a#pull {
 /***** Portfolio *****/
 #portfolio {
     width: 100%;
-    background: url("../imgs/bkgs/port-bkg.png") repeat;
+    background: url("../imgs/bkgs/port-bkg.png") repeat top center;
     padding: 0 0 9em 0;
 }
 .port-box {
